@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Partida - Escaleras y Serpientes</title>
+
+    <!-- Tu CSS general -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="web/stair-32.png">
+    <!-- Font Awesome (igual que en index) -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="game-layout">
+        <!-- TABLERO -->
+        <section class="board-wrap">
+        <div id="board" class="board" aria-label="Tablero 10x10"></div>
+        </section>
+
+        <!-- PANEL DERECHA -->
+        <aside class="hud" aria-label="Panel de jugadores y dado">
+        <div class="hud-section">
+            <h2><i class="fa-solid fa-person"></i> Jugadores</h2>
+            <div id="playersHud" class="players-hud"></div>
+        </div>
+
+        <div class="hud-section">
+            <h2><i class="fa-solid fa-dice"></i> Dado</h2>
+
+            <div class="dice-box">
+            <div class="dice-value" id="diceValue">-</div>
+            <button id="btnRoll" class="btn-roll" type="button">
+                Tirar dado
+            </button>
+            <p class="dice-info" id="diceInfo">Turno de: -</p>
+            </div>
+
+            <button id="btnBack" class="btn-back" type="button">
+            ← Volver
+            </button>
+        </div>
+        </aside>
+    </div>
+
+    <script src="scripts/partida.js" defer></script>
+</body>
+</html>

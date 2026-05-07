@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Escaleras y serpientes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="web/stair-32.png">
+        <!-- Font Awesome CDN -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <h1 class="title"><i class="fa-solid fa-up-long"></i> Escaleras y serpientes <i class="fa-solid fa-down-long"></i></h1>
+        <div class="main-container">
+            <div class="cont-player-card">
+                <h2 style="text-align: left; margin-left: 25px;"><i class="fa-solid fa-person"></i> Jugadores <i class="fa-solid fa-gamepad"></i></h2>
+                <div class="player-card">
+                    <div class="side-bar"></div>
+                    <div class="player-profile"></div>
+                    <input class="player-name" id="name_input1" type="text" name="username" placeholder="Jugador 1">
+                    <button class="player-profile-back" type="button" aria-label="Color anterior">◀</button>
+                    <button class="player-profile-next" type="button" aria-label="Color siguiente">▶</button>
+                    <button class="player-color-back" type="button" aria-label="Color anterior">◀</button>
+                    <select class="player-color-select" aria-label="Color del jugador"></select>
+                    <button class="player-color-next" type="button" aria-label="Color siguiente">▶</button>
+                    <div class="player-card-spacer"></div>
+                </div>
+
+                <div class="player-card">
+                    <div class="side-bar"></div>
+                    <div class="player-profile"></div>
+                    <input class="player-name" id="name_input2" type="text" name="username" placeholder="Jugador 2">
+                    <button class="player-profile-back" type="button" aria-label="Color anterior">◀</button>
+                    <button class="player-profile-next" type="button" aria-label="Color siguiente">▶</button>
+                    <button class="player-color-back" type="button" aria-label="Color anterior">◀</button>
+                    <select class="player-color-select" aria-label="Color del jugador"></select>
+                    <button class="player-color-next" type="button" aria-label="Color siguiente">▶</button>
+                    <div class="player-card-spacer"></div>
+                </div>
+
+                <div class="player-card">
+                    <div class="side-bar"></div>
+                    <div class="player-profile"></div>
+                    <input class="player-name" id="name_input3" type="text" name="username" placeholder="Jugador 3">
+                    <button class="player-profile-back" type="button" aria-label="Color anterior">◀</button>
+                    <button class="player-profile-next" type="button" aria-label="Color siguiente">▶</button>
+                    <button class="player-color-back" type="button" aria-label="Color anterior">◀</button>
+                    <select class="player-color-select" aria-label="Color del jugador"></select>
+                    <button class="player-color-next" type="button" aria-label="Color siguiente">▶</button>
+                    <div class="player-card-spacer"></div>
+                </div>
+                
+                <div class="player-card">
+                    <div class="side-bar"></div>
+                    <div class="player-profile"></div>
+                    <input class="player-name" id="name_input4" type="text" name="username" placeholder="Jugador 4">
+                    <button class="player-profile-back" type="button" aria-label="Color anterior">◀</button>
+                    <button class="player-profile-next" type="button" aria-label="Color siguiente">▶</button>
+                    <button class="player-color-back" type="button" aria-label="Color anterior">◀</button>
+                    <select class="player-color-select" aria-label="Color del jugador"></select>
+                    <button class="player-color-next" type="button" aria-label="Color siguiente">▶</button>
+                    <div class="player-card-spacer"></div>
+                </div>
+            </div>
+
+            <div class="cont-panel">
+                <h2><i class="fa-solid fa-ellipsis-vertical"></i> Panel</h2>
+                <br>
+                <br>
+                <button class="btn-start" type="button"><i class="fa-solid fa-play"></i> INICIAR PARTIDA</button>
+                <br>
+                <br>
+                <button class="btn-instr" type="button" onclick="window.location.href='instrucciones.html'"><i class="fa-solid fa-list"></i> INSTRUCCIONES</button>
+                <br>
+                <br>
+                <button class="btn-credi" type="button" onclick="window.location.href='creditos.html'"><i class="fa-solid fa-question"></i> CREDITOS</button>
+            </div>
+        </div>
+        <script src="scripts/script.js" defer></script>
+    </body>
+</html>
